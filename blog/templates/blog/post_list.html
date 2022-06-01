@@ -1,34 +1,22 @@
 <html>
     <head>
-         <title>Bunni's Bwog</title>
-    </head>
-<h1>big list of thingsz</h1>
-<h2>yes, a list.</h2>
-<p>ahem. numba owan. pawagwaph.</p>
-<em>wat dis do</em>
-<strong>wat bout dis</strong>
-<br>
-
-<a>awa.com</a>
-<ul><li>ok now a weal wist</li><li>fun fact its all codded in owan string not one under the other</li></ul>
-
-<div></div>
-
-<html>
-    <head>
-        <title>Blog Django Girls</title>
+        <title>bunsz thoughts</title>
     </head>
     <body>
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+      <div>
+        <h1><a href="/">Hai! Welcome</a></h1>
+        </div>
+
 
 {% for post in posts %}
     <div>
-      <p>published:  {{ post.published_date }}</p>
-      <h2><a href="">{{ post.title }}</a></h2>
-      <p>{{ post.text|linebreaksbr }}</p>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
-{% endfor %}    
+        {% endfor %}
     </body>
+
+
+
 </html>
